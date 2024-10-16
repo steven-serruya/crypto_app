@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Crypto Tracker Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **Crypto Tracker Application** built with **React**, using **Redux Toolkit** to fetch cryptocurrency data and news via APIs. It provides real-time information on the top cryptocurrencies, detailed stats on each currency, and the latest news in the crypto world. The app also includes filtering functionality for both news and cryptocurrencies, allowing users to stay updated and informed.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Global Crypto Stats**: Displays stats such as total cryptocurrencies, exchanges, market cap, 24-hour volume, and markets.
+- **Top Cryptocurrencies**: Lists the top 10 cryptocurrencies in the world with real-time data.
+- **Crypto Details**: Shows detailed information about each cryptocurrency, including price, market cap, history, and more.
+- **Latest Crypto News**: Fetches and displays the latest news articles related to cryptocurrencies.
+- **Filtering**: Users can filter cryptocurrencies and news to quickly find the information they need.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Frontend framework used for building the UI.
+- **Redux Toolkit**: For state management and API calls.
+- **Ant Design**: UI component library for layout and design.
+- **RapidAPI**: Used for fetching data from cryptocurrency and news APIs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Setup
 
-### `npm test`
+To get started with the project, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Make sure you have **Node.js** and **npm** installed on your machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    
+    git clone https://github.com/your-username/crypto-tracker-app.git
+    
 
-### `npm run eject`
+2. Navigate to the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    
+    cd crypto-tracker-app
+  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install the dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    
+    npm install
+  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Environment Variables
 
-## Learn More
+To run the project, you'll need to configure the following environment variables in a `.env` file located at the root of your project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### To start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start 
 
-### Code Splitting
+## API Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This app uses two main APIs from **RapidAPI**:
 
-### Analyzing the Bundle Size
+- **CoinRanking API**: Used to fetch cryptocurrency data such as global stats, individual coin details, and market history.
+- **Crypto News API**: Used to fetch the latest news about cryptocurrencies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Crypto API Endpoints
 
-### Making a Progressive Web App
+- **Global Stats**: `/stats`
+- **Top Cryptocurrencies**: `/coins?limit=10`
+- **Coin Details**: `/coin/{coinId}`
+- **Coin History**: `/coin/{coinId}/history?timePeriod={timeperiod}`
+- **Exchanges**: `/coin/{coinId}/exchanges`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### News API Endpoint
 
-### Advanced Configuration
+- **Crypto Daily News**: `/v1/cryptodaily`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Pages and Components
 
-### Deployment
+### Homepage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Global Crypto Stats**: Displays global stats for cryptocurrencies.
+- **Top 10 Cryptos In The World**: Lists the top 10 cryptocurrencies with stats like price, market cap, and volume.
+- **Latest Crypto News**: Fetches and displays news articles related to cryptocurrencies.
 
-### `npm run build` fails to minify
+### Crypto Details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **CryptoDetails**: Provides detailed stats and charts about a specific cryptocurrency.
+
+### News
+
+- **News**: Fetches and displays the latest crypto-related news with filters.
+
+## Filtering
+
+The app includes filtering capabilities for both cryptocurrencies and news:
+
+- **Cryptocurrencies**: You can filter by currency type and sorting options.
+- **News**: You can filter news articles based on topics and relevance.
