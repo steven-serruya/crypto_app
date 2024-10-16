@@ -94,3 +94,14 @@ The app includes filtering capabilities for both cryptocurrencies and news:
 
 - **Cryptocurrencies**: You can filter by currency type and sorting options.
 - **News**: You can filter news articles based on topics and relevance.
+
+### Screenshots
+![Homepage with top 10 crypto and top news](public/screenshots/fullHomepage.png)
+![Show more Crypto](public/screenshots/fullCrypto.png)
+![Show more News](public/screenshots/fullNews.png)
+![Home page crytpo stats](public/screenshots/homepageStats.png)
+![Home page top 10 cryptos](public/screenshots/homepageCrypto.png)
+![Home page top news](public/screenshots/homapageNews.png)
+![Navbar](public/screenshots/navbar.png)
+![Crypto search](public/screenshots/cryptoFilter.png)
+![News search](public/screenshots/newsFilter.png)
